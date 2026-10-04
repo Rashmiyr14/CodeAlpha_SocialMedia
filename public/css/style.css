@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+header {
+    background: #1877f2;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background: white;
+    color: #1877f2;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+#authSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.auth-box,
+.profile-box,
+.post-box,
+.feed-box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.auth-box h2,
+.profile-box h2,
+.post-box h2,
+.feed-box h2 {
+    margin-top: 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#registerMessage,
+#loginMessage,
+#postMessage {
+    font-weight: bold;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.post-card h3 {
+    margin-top: 0;
+}
+
+.post-date {
+    color: #777;
+    font-size: 13px;
+}
+
+.post-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.comment-box {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.follow-btn {
+    background: #42b72a;
+}
+
+@media (max-width: 700px) {
+    #authSection {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header {
+        padding: 15px;
+    }
+}

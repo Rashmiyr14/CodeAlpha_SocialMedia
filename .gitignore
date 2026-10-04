@@ -1,0 +1,5 @@
+@"
+node_modules/
+database/social_media.db
+.env
+"@ | Set-Content .gitignore
